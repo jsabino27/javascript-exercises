@@ -1,8 +1,8 @@
 const repeatString = function(string, num) {
-    let word = "";
-    while(num > 0){
-        string += word;
-        num--;
+    if (num < 0) return 'ERROR'
+    let word = '';
+    for (let index = 0; index < num; index++) {
+        word += string;
     }
     return word;
 };
